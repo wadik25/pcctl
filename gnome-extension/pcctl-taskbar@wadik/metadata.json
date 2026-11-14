@@ -1,0 +1,8 @@
+{
+  "uuid": "pcctl-taskbar@wadik",
+  "name": "pcctl Taskbar",
+  "description": "Zeigt offene Aufgaben in der oberen Leiste und benachrichtigt bei WhatsApp-Aufgaben. Verbindet sich mit dem lokalen pcctl-Agent.",
+  "shell-version": ["48", "49", "50"],
+  "session-modes": ["user"],
+  "version": 2
+}

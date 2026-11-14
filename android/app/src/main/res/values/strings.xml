@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">pcctl</string>
+    <string name="widget_action_label">pcctl · Schnellzugriff</string>
+    <string name="widget_stats_label">pcctl · Kennzahlen</string>
+    <string name="widget_scene_label">pcctl · Szenen</string>
+    <string name="widget_action_description">Mikrofon, Monitore und Beleuchtung direkt vom Startbildschirm schalten</string>
+    <string name="widget_stats_description">Temperatur und Auslastung des Rechners</string>
+    <string name="widget_scene_description">Szenen mit einem Druck ausführen</string>
+    <string name="widget_tasks_label">pcctl · Aufgaben</string>
+    <string name="widget_workmode_label">pcctl · Work-Mode</string>
+    <string name="widget_tasks_description">Offene Aufgaben mit Checkbox direkt auf dem Startbildschirm</string>
+    <string name="widget_workmode_description">Work-Mode umschalten (grün normal, rot Deep Work)</string>
+</resources>

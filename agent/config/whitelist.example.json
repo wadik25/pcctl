@@ -1,0 +1,9 @@
+{
+  "chats": [
+    {
+      "jid": "491701234567@s.whatsapp.net",
+      "name": "Beispiel Kontakt",
+      "enabled": true
+    }
+  ]
+}

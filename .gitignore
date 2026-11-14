@@ -1,0 +1,49 @@
+# Abhängigkeiten
+node_modules/
+
+# Build-Ausgaben
+build/
+dist/
+target/
+.gradle/
+.kotlin/
+.svelte-kit/
+*.tsbuildinfo
+desktop/src-tauri/gen/
+*.apk
+*.aab
+
+# Lokale Konfiguration und Geheimnisse (nur *.example.json gehört ins Repo)
+.env
+.env.*
+!.env.example
+local.properties
+*.keystore
+*.jks
+*.pem
+*.key
+config.json
+whitelist.json
+scenes.json
+agent/config/*
+!agent/config/*.example.json
+
+# Laufzeitdaten des Agents (liegen normalerweise in ~/.local/share/pcctl)
+wa-auth/
+wa-chats.json
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+*.sqlite3
+
+# Logs und Caches
+*.log
+.cache/
+.npm/
+
+# Editor und Betriebssystem
+.idea/
+.vscode/
+*.iml
+.DS_Store

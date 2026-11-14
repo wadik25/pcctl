@@ -1,0 +1,8 @@
+{
+  "uuid": "pcctl-bridge@wadik",
+  "name": "pcctl Bridge",
+  "description": "Stellt Fensterliste und Fokus-Information über D-Bus bereit, damit der pcctl-Agent unter Wayland gezielt arbeiten kann.",
+  "shell-version": ["45", "46", "47", "48", "49", "50"],
+  "session-modes": ["user"],
+  "version": 1
+}

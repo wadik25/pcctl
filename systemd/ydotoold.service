@@ -1,0 +1,13 @@
+[Unit]
+Description=ydotoold – virtuelles Eingabegerät für pcctl
+Documentation=man:ydotoold(8)
+After=default.target
+
+[Service]
+Type=simple
+ExecStart=/usr/bin/ydotoold --socket-path %t/.ydotool_socket --socket-perm 0600
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=default.target

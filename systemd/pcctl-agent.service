@@ -1,0 +1,36 @@
+[Unit]
+Description=pcctl – Steuer-Agent für die Fernbedienung vom Handy
+Documentation=file:%h/Projekte/pcctl/README.md
+After=graphical-session.target network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+# Node 24 führt TypeScript direkt aus – es gibt keinen Build-Schritt.
+ExecStart=/usr/bin/env node %h/Projekte/pcctl/agent/src/server.ts
+WorkingDirectory=%h/Projekte/pcctl/agent
+Restart=always
+RestartSec=3
+
+# Der Agent braucht die Sitzungs-Schnittstellen (wpctl, gdbus, ydotool),
+# deshalb läuft er als Benutzerdienst und nicht systemweit.
+Environment=NODE_ENV=production
+Environment=PCCTL_LOG_LEVEL=info
+# systemd-Benutzerdienste haben sonst nur /usr/local/bin:/usr/bin –
+# claude liegt in ~/.local/bin, ydotool spricht über den Runtime-Socket.
+Environment=PATH=%h/.local/bin:%h/.cargo/bin:%h/.bun/bin:%h/bin:/usr/local/bin:/usr/bin
+Environment=YDOTOOL_SOCKET=%t/.ydotool_socket
+
+# Grundlegende Absicherung. Kein ProtectHome, weil die Konfiguration und die
+# Claude-Protokolle im Benutzerverzeichnis liegen.
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectKernelTunables=true
+ProtectControlGroups=true
+RestrictSUIDSGID=true
+
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=default.target

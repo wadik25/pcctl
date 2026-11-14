@@ -1,0 +1,9 @@
+[Desktop Entry]
+Type=Application
+Name=pcctl
+Comment=KI-Aufgaben-Inbox für den Desktop
+Exec=pcctl-desktop
+Icon=pcctl
+Terminal=false
+Categories=Utility;Office;
+StartupNotify=true

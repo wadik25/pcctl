@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Bildschirm mit Ein-/Aus-Zeichen: Fernsteuerung des Rechners. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+
+    <!-- Monitorrahmen -->
+    <path
+        android:pathData="M30,34 L78,34 A4,4 0 0 1 82,38 L82,66 A4,4 0 0 1 78,70 L30,70 A4,4 0 0 1 26,66 L26,38 A4,4 0 0 1 30,34 Z"
+        android:strokeColor="#4DD8E6"
+        android:strokeWidth="3.5"
+        android:fillColor="#00000000" />
+
+    <!-- Standfuß -->
+    <path
+        android:pathData="M46,70 L46,76 M62,70 L62,76 M40,76 L68,76"
+        android:strokeColor="#4DD8E6"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round" />
+
+    <!-- Ein-/Aus-Zeichen auf dem Bildschirm -->
+    <path
+        android:pathData="M54,44 L54,52"
+        android:strokeColor="#FFB86C"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M47,46 A9,9 0 1 0 61,46"
+        android:strokeColor="#FFB86C"
+        android:strokeWidth="3.5"
+        android:strokeLineCap="round"
+        android:fillColor="#00000000" />
+</vector>
